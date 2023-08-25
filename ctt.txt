@@ -1,0 +1,68 @@
+Tabel 1: Pasien
+
+id_pasien (Primary Key)
+nama_pasien
+jenis_kelamin
+tanggal_lahir
+alamat
+no_telepon
+
+Tabel 2: Poli
+
+id_poli (Primary Key)
+nama_poli
+ruang_poli
+
+Tabel 3: Dokter
+
+id_dokter (Primary Key)
+nama_dokter
+spesialisasi
+alamat_dokter
+nomor_telepon_dokter
+
+Tabel 4: Jadwal
+
+id_jadwal (Primary Key)
+id_poli (Foreign Key ke Tabel Poli)
+id_dokter (Foreign Key ke Tabel Dokter)
+hari
+jam_mulai
+jam_selesai
+
+Tabel 5: Antrian
+
+id_antrian (Primary Key)
+id_pasien (Foreign Key ke Tabel Pasien)
+id_jadwal (Foreign key ke Tabel Jadwal)
+nomor_antrian
+pesan
+
+Tabel 6: Admin
+
+id_admin (Primary Key)
+nama_admin
+username
+password
+
+Tabel 7: Akun
+
+id_akun (Primary Key)
+id_pasien (Foreign Key ke Tabel Pasien)
+username
+password
+
+Tabel 8: Janji
+
+id_pasien_lama (Primary Key)
+id_pasien (Foreign Key ke Tabel Pasien)
+tanggal_kunjungan
+id_poli (Foreign Key ke Tabel Poli)
+
+Tabel 9: files
+
+id (primary key)
+id_dokter
+image 
+deskripsi
+tangal

@@ -1,0 +1,28 @@
+/* CSS untuk tab */
+.tab {
+    overflow: hidden;
+    background-color: #f1f1f1;
+}
+
+/* Gaya untuk tombol tab */
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    transition: 0.3s;
+}
+
+/* Gaya saat tombol tab aktif */
+.tab button.active {
+    background-color: #ccc;
+}
+
+/* Konten tab */
+.tabcontent {
+    display: none;
+    padding: 20px;
+    background-color: white;
+}
